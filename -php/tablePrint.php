@@ -10,17 +10,19 @@
 	</th>
 	<?php foreach ($teams as $key => $value) { ?>
 		<tr>
-			<td><?= $key?></td>
+			<td><?= $key; ?></td>
 			<?php foreach ($properties as $property) { ?>
 			<td>
 				<?php
-				if (isset($teams[$key][$property]))
-					echo $teams[$key][$property] == null ? "-" : $teams[$key][$property];
-				else
+				if (!isset($teams[$key][$property]))
 					echo "-";
+				else if ($property == 'url'){ ?>
+					<a href="<?= $teams[$key][$property]; ?>"><?= $teams[$key][$property]; ?></a><?php
+				} else
+					echo $teams[$key][$property] == null ? "-" : $teams[$key][$property];
 				?>
 			</td>
 		<?php } ?>
 		</tr>
-	<?php }; ?>
+	<?php } ?>
 </table>

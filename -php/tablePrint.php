@@ -1,11 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>07 - Some Teams</title>
-</head>
-<body>
+<?php $properties = ['league','last-time-champions','city','nickname','url']; ?>
 
-</body>
-</html>
+<table>
+	<th>
+		<td>League</td>
+		<td>Last time champions</td>
+		<td>City</td>
+		<td>Nickname</td>
+		<td>Url</td>
+	</th>
+	<?php foreach ($teams as $key => $value) { ?>
+		<tr>
+			<td><?= $key?></td>
+			<?php foreach ($properties as $property) { ?>
+			<td>
+				<?php
+				if (isset($teams[$key][$property]))
+					echo $teams[$key][$property] == null ? "-" : $teams[$key][$property];
+				else
+					echo "-";
+				?>
+			</td>
+		<?php } ?>
+		</tr>
+	<?php }; ?>
+</table>

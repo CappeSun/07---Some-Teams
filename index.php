@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>07 - Some Teams</title>
-</head>
+<?php require __DIR__.'/-php/head.php'; ?>
 <body>
-
+	<?php require __DIR__.'/-php/data.php'; ?>
+	<?php require __DIR__.'/-php/teamsCount.php'; ?>
+	<?php require __DIR__.'/-php/tablePrint.php'; ?>
+	<?php require __DIR__.'/-php/citiesPrint.php'; ?>
 </body>
 </html>

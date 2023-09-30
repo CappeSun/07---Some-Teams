@@ -1,5 +1,1 @@
-<?php
-
-echo "Number of teams: ".count($teams);
-
-?>
+<h4><?php echo "Number of teams: ".count($teams); ?></h4>		<?php //Print the number of teams present in data.php ?>

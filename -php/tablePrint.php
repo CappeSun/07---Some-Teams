@@ -1,13 +1,14 @@
 <?php $properties = ['league','last-time-champions','city','nickname','url'];		//Prepare what to look for ?>
 
 <table>
-	<th>
-		<td>League</td>
-		<td>Last time champions</td>
-		<td>City</td>
-		<td>Nickname</td>
-		<td>Url</td>
-	</th>
+	<tr>
+		<th>Team</th>
+		<th>League</th>
+		<th>Last time champions</th>
+		<th>City</th>
+		<th>Nickname</th>
+		<th>Url</th>
+	</tr>
 	<?php foreach ($teams as $key => $value) { ?>
 		<tr>
 			<td><?= $key; ?></td>

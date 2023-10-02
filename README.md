@@ -1,4 +1,4 @@
-# 07 - Some-Teams
+# 07 - Some Teams
 
 This is the first of many assignments for my education at YRGO, called "Some Teams".
 
